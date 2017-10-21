@@ -2361,3 +2361,1974 @@ puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-21 18:08:16 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 289ms (Views: 278.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:08:17 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 18:08:22 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Redirected to http://localhost:3000/pages?tweets%5B%5D%5BTweet%3A+Crooked+Hillary+Clinton+spent+hundreds+of+millions+of+dollars+more+on+Presidential+Election+than+I+did.+Facebook+was+on+her+side%2C+not+mine%21%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Keep+hearing+about+%22tiny%22+amount+of+money+spent+on+Facebook+ads.+What+about+the+billions+of+dollars+of+Fake+News+on+CNN%2C+ABC%2C+NBC+%26amp%3B+CBS%3F%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Officials+behind+the+now+discredited+%22Dossier%22+plead+the+Fifth.+Justice+Department+and%2For+FBI+should+immediately+release+who+paid+for+it.%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+%E2%80%9CTrump+hails+liberation+of+Raqqa+as+critical+breakthrough+in+anti-ISIS+campaign%E2%80%9D+https%3A%2F%2Ft.co%2F2eoYXJB7h0%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Stock+Market+hits+another+all+time+high+on+Friday.+5.3+trillion+dollars+up+since+Election.+Fake+News+doesn%27t+spent+much+time+on+this%21%5D=
+Completed 302 Found in 5127ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/pages?tweets%5B%5D%5BTweet%3A+Crooked+Hillary+Clinton+spent+hundreds+of+millions+of+dollars+more+on+Presidential+Election+than+I+did.+Facebook+was+on+her+side%2C+not+mine%21%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Keep+hearing+about+%22tiny%22+amount+of+money+spent+on+Facebook+ads.+What+about+the+billions+of+dollars+of+Fake+News+on+CNN%2C+ABC%2C+NBC+%26amp%3B+CBS%3F%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Officials+behind+the+now+discredited+%22Dossier%22+plead+the+Fifth.+Justice+Department+and%2For+FBI+should+immediately+release+who+paid+for+it.%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+%E2%80%9CTrump+hails+liberation+of+Raqqa+as+critical+breakthrough+in+anti-ISIS+campaign%E2%80%9D+https%3A%2F%2Ft.co%2F2eoYXJB7h0%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Stock+Market+hits+another+all+time+high+on+Friday.+5.3+trillion+dollars+up+since+Election.+Fake+News+doesn%27t+spent+much+time+on+this%21%5D=" for 127.0.0.1 at 2017-10-21 18:08:27 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>[{"Tweet: Crooked Hillary Clinton spent hundreds of millions of dollars more on Presidential Election than I did. Facebook was on her side, not mine!"=>"0.20000000298\n", "Tweet: Keep hearing about \"tiny\" amount of money spent on Facebook ads. What about the billions of dollars of Fake News on CNN, ABC, NBC &amp; CBS?"=>"0.20000000298\n", "Tweet: Officials behind the now discredited \"Dossier\" plead the Fifth. Justice Department and/or FBI should immediately release who paid for it."=>"0.20000000298\n", "Tweet: “Trump hails liberation of Raqqa as critical breakthrough in anti-ISIS campaign” https://t.co/2eoYXJB7h0"=>"0.20000000298\n", "Tweet: Stock Market hits another all time high on Friday. 5.3 trillion dollars up since Election. Fake News doesn't spent much time on this!"=>""}]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:08:27 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages?tweets%5B%5D%5BTweet%3A+Crooked+Hillary+Clinton+spent+hundreds+of+millions+of+dollars+more+on+Presidential+Election+than+I+did.+Facebook+was+on+her+side%2C+not+mine%21%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Keep+hearing+about+%22tiny%22+amount+of+money+spent+on+Facebook+ads.+What+about+the+billions+of+dollars+of+Fake+News+on+CNN%2C+ABC%2C+NBC+%26amp%3B+CBS%3F%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Officials+behind+the+now+discredited+%22Dossier%22+plead+the+Fifth.+Justice+Department+and%2For+FBI+should+immediately+release+who+paid+for+it.%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+%E2%80%9CTrump+hails+liberation+of+Raqqa+as+critical+breakthrough+in+anti-ISIS+campaign%E2%80%9D+https%3A%2F%2Ft.co%2F2eoYXJB7h0%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Stock+Market+hits+another+all+time+high+on+Friday.+5.3+trillion+dollars+up+since+Election.+Fake+News+doesn%27t+spent+much+time+on+this%21%5D=" for 127.0.0.1 at 2017-10-21 18:10:21 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>[{"Tweet: Crooked Hillary Clinton spent hundreds of millions of dollars more on Presidential Election than I did. Facebook was on her side, not mine!"=>"0.20000000298\n", "Tweet: Keep hearing about \"tiny\" amount of money spent on Facebook ads. What about the billions of dollars of Fake News on CNN, ABC, NBC &amp; CBS?"=>"0.20000000298\n", "Tweet: Officials behind the now discredited \"Dossier\" plead the Fifth. Justice Department and/or FBI should immediately release who paid for it."=>"0.20000000298\n", "Tweet: “Trump hails liberation of Raqqa as critical breakthrough in anti-ISIS campaign” https://t.co/2eoYXJB7h0"=>"0.20000000298\n", "Tweet: Stock Market hits another all time high on Friday. 5.3 trillion dollars up since Election. Fake News doesn't spent much time on this!"=>""}]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:10:21 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 18:10:23 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>""}
+Completed 500 Internal Server Error in 453ms (ActiveRecord: 0.0ms)
+
+
+  
+Twitter::Error::Unauthorized (Not authorized.):
+  
+app/controllers/pages_controller.rb:88:in `timeline_query'
+app/controllers/pages_controller.rb:33:in `create'
+Started GET "/pages?tweets%5B%5D%5BTweet%3A+Crooked+Hillary+Clinton+spent+hundreds+of+millions+of+dollars+more+on+Presidential+Election+than+I+did.+Facebook+was+on+her+side%2C+not+mine%21%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Keep+hearing+about+%22tiny%22+amount+of+money+spent+on+Facebook+ads.+What+about+the+billions+of+dollars+of+Fake+News+on+CNN%2C+ABC%2C+NBC+%26amp%3B+CBS%3F%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Officials+behind+the+now+discredited+%22Dossier%22+plead+the+Fifth.+Justice+Department+and%2For+FBI+should+immediately+release+who+paid+for+it.%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+%E2%80%9CTrump+hails+liberation+of+Raqqa+as+critical+breakthrough+in+anti-ISIS+campaign%E2%80%9D+https%3A%2F%2Ft.co%2F2eoYXJB7h0%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Stock+Market+hits+another+all+time+high+on+Friday.+5.3+trillion+dollars+up+since+Election.+Fake+News+doesn%27t+spent+much+time+on+this%21%5D=" for 127.0.0.1 at 2017-10-21 18:10:25 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>[{"Tweet: Crooked Hillary Clinton spent hundreds of millions of dollars more on Presidential Election than I did. Facebook was on her side, not mine!"=>"0.20000000298\n", "Tweet: Keep hearing about \"tiny\" amount of money spent on Facebook ads. What about the billions of dollars of Fake News on CNN, ABC, NBC &amp; CBS?"=>"0.20000000298\n", "Tweet: Officials behind the now discredited \"Dossier\" plead the Fifth. Justice Department and/or FBI should immediately release who paid for it."=>"0.20000000298\n", "Tweet: “Trump hails liberation of Raqqa as critical breakthrough in anti-ISIS campaign” https://t.co/2eoYXJB7h0"=>"0.20000000298\n", "Tweet: Stock Market hits another all time high on Friday. 5.3 trillion dollars up since Election. Fake News doesn't spent much time on this!"=>""}]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:10:25 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 18:10:29 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Redirected to http://localhost:3000/pages?tweets%5B%5D%5BTweet%3A+Crooked+Hillary+Clinton+spent+hundreds+of+millions+of+dollars+more+on+Presidential+Election+than+I+did.+Facebook+was+on+her+side%2C+not+mine%21%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Keep+hearing+about+%22tiny%22+amount+of+money+spent+on+Facebook+ads.+What+about+the+billions+of+dollars+of+Fake+News+on+CNN%2C+ABC%2C+NBC+%26amp%3B+CBS%3F%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Officials+behind+the+now+discredited+%22Dossier%22+plead+the+Fifth.+Justice+Department+and%2For+FBI+should+immediately+release+who+paid+for+it.%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+%E2%80%9CTrump+hails+liberation+of+Raqqa+as+critical+breakthrough+in+anti-ISIS+campaign%E2%80%9D+https%3A%2F%2Ft.co%2F2eoYXJB7h0%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Stock+Market+hits+another+all+time+high+on+Friday.+5.3+trillion+dollars+up+since+Election.+Fake+News+doesn%27t+spent+much+time+on+this%21%5D=
+Completed 302 Found in 4509ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/pages?tweets%5B%5D%5BTweet%3A+Crooked+Hillary+Clinton+spent+hundreds+of+millions+of+dollars+more+on+Presidential+Election+than+I+did.+Facebook+was+on+her+side%2C+not+mine%21%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Keep+hearing+about+%22tiny%22+amount+of+money+spent+on+Facebook+ads.+What+about+the+billions+of+dollars+of+Fake+News+on+CNN%2C+ABC%2C+NBC+%26amp%3B+CBS%3F%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Officials+behind+the+now+discredited+%22Dossier%22+plead+the+Fifth.+Justice+Department+and%2For+FBI+should+immediately+release+who+paid+for+it.%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+%E2%80%9CTrump+hails+liberation+of+Raqqa+as+critical+breakthrough+in+anti-ISIS+campaign%E2%80%9D+https%3A%2F%2Ft.co%2F2eoYXJB7h0%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Stock+Market+hits+another+all+time+high+on+Friday.+5.3+trillion+dollars+up+since+Election.+Fake+News+doesn%27t+spent+much+time+on+this%21%5D=" for 127.0.0.1 at 2017-10-21 18:10:33 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>[{"Tweet: Crooked Hillary Clinton spent hundreds of millions of dollars more on Presidential Election than I did. Facebook was on her side, not mine!"=>"0.20000000298\n", "Tweet: Keep hearing about \"tiny\" amount of money spent on Facebook ads. What about the billions of dollars of Fake News on CNN, ABC, NBC &amp; CBS?"=>"0.20000000298\n", "Tweet: Officials behind the now discredited \"Dossier\" plead the Fifth. Justice Department and/or FBI should immediately release who paid for it."=>"0.20000000298\n", "Tweet: “Trump hails liberation of Raqqa as critical breakthrough in anti-ISIS campaign” https://t.co/2eoYXJB7h0"=>"0.20000000298\n", "Tweet: Stock Market hits another all time high on Friday. 5.3 trillion dollars up since Election. Fake News doesn't spent much time on this!"=>""}]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:10:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages?tweets%5B%5D%5BTweet%3A+Crooked+Hillary+Clinton+spent+hundreds+of+millions+of+dollars+more+on+Presidential+Election+than+I+did.+Facebook+was+on+her+side%2C+not+mine%21%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Keep+hearing+about+%22tiny%22+amount+of+money+spent+on+Facebook+ads.+What+about+the+billions+of+dollars+of+Fake+News+on+CNN%2C+ABC%2C+NBC+%26amp%3B+CBS%3F%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Officials+behind+the+now+discredited+%22Dossier%22+plead+the+Fifth.+Justice+Department+and%2For+FBI+should+immediately+release+who+paid+for+it.%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+%E2%80%9CTrump+hails+liberation+of+Raqqa+as+critical+breakthrough+in+anti-ISIS+campaign%E2%80%9D+https%3A%2F%2Ft.co%2F2eoYXJB7h0%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Stock+Market+hits+another+all+time+high+on+Friday.+5.3+trillion+dollars+up+since+Election.+Fake+News+doesn%27t+spent+much+time+on+this%21%5D=" for 127.0.0.1 at 2017-10-21 18:10:44 -0400
+Started GET "/pages?tweets%5B%5D%5BTweet%3A+Crooked+Hillary+Clinton+spent+hundreds+of+millions+of+dollars+more+on+Presidential+Election+than+I+did.+Facebook+was+on+her+side%2C+not+mine%21%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Keep+hearing+about+%22tiny%22+amount+of+money+spent+on+Facebook+ads.+What+about+the+billions+of+dollars+of+Fake+News+on+CNN%2C+ABC%2C+NBC+%26amp%3B+CBS%3F%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Officials+behind+the+now+discredited+%22Dossier%22+plead+the+Fifth.+Justice+Department+and%2For+FBI+should+immediately+release+who+paid+for+it.%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+%E2%80%9CTrump+hails+liberation+of+Raqqa+as+critical+breakthrough+in+anti-ISIS+campaign%E2%80%9D+https%3A%2F%2Ft.co%2F2eoYXJB7h0%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Stock+Market+hits+another+all+time+high+on+Friday.+5.3+trillion+dollars+up+since+Election.+Fake+News+doesn%27t+spent+much+time+on+this%21%5D=" for 127.0.0.1 at 2017-10-21 18:10:44 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>[{"Tweet: Crooked Hillary Clinton spent hundreds of millions of dollars more on Presidential Election than I did. Facebook was on her side, not mine!"=>"0.20000000298\n", "Tweet: Keep hearing about \"tiny\" amount of money spent on Facebook ads. What about the billions of dollars of Fake News on CNN, ABC, NBC &amp; CBS?"=>"0.20000000298\n", "Tweet: Officials behind the now discredited \"Dossier\" plead the Fifth. Justice Department and/or FBI should immediately release who paid for it."=>"0.20000000298\n", "Tweet: “Trump hails liberation of Raqqa as critical breakthrough in anti-ISIS campaign” https://t.co/2eoYXJB7h0"=>"0.20000000298\n", "Tweet: Stock Market hits another all time high on Friday. 5.3 trillion dollars up since Election. Fake News doesn't spent much time on this!"=>""}]}
+  Parameters: {"tweets"=>[{"Tweet: Crooked Hillary Clinton spent hundreds of millions of dollars more on Presidential Election than I did. Facebook was on her side, not mine!"=>"0.20000000298\n", "Tweet: Keep hearing about \"tiny\" amount of money spent on Facebook ads. What about the billions of dollars of Fake News on CNN, ABC, NBC &amp; CBS?"=>"0.20000000298\n", "Tweet: Officials behind the now discredited \"Dossier\" plead the Fifth. Justice Department and/or FBI should immediately release who paid for it."=>"0.20000000298\n", "Tweet: “Trump hails liberation of Raqqa as critical breakthrough in anti-ISIS campaign” https://t.co/2eoYXJB7h0"=>"0.20000000298\n", "Tweet: Stock Market hits another all time high on Friday. 5.3 trillion dollars up since Election. Fake News doesn't spent much time on this!"=>""}]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.3ms)
+  Rendered pages/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 489ms (Views: 484.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 498ms (Views: 486.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:10:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 18:10:52 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Completed 500 Internal Server Error in 757ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `results' for #<PagesController:0x007ff0d8045058>
+Did you mean?  result):
+  
+app/sentiment.rb:5:in `block in get_sentiment'
+app/sentiment.rb:3:in `each'
+app/sentiment.rb:3:in `get_sentiment'
+app/controllers/pages_controller.rb:34:in `create'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 18:11:03 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Completed 500 Internal Server Error in 784ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `results' for #<PagesController:0x007ff0d7201988>
+Did you mean?  result):
+  
+app/sentiment.rb:5:in `block in get_sentiment'
+app/sentiment.rb:3:in `each'
+app/sentiment.rb:3:in `get_sentiment'
+app/controllers/pages_controller.rb:34:in `create'
+Started GET "/pages" for 127.0.0.1 at 2017-10-21 18:11:13 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 248ms (Views: 238.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-21 18:11:13 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:11:13 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 18:11:18 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Redirected to http://localhost:3000/pages?tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=
+Completed 302 Found in 4386ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/pages?tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=" for 127.0.0.1 at 2017-10-21 18:11:23 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>["0.20000000298\n", "0.20000000298\n", "0.20000000298\n", "0.20000000298\n", ""]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:11:23 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages?tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=" for 127.0.0.1 at 2017-10-21 18:12:01 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>["0.20000000298\n", "0.20000000298\n", "0.20000000298\n", "0.20000000298\n", ""]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 231ms (Views: 221.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:12:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 18:12:06 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Redirected to http://localhost:3000/pages?tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=
+Completed 302 Found in 4267ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/pages?tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=" for 127.0.0.1 at 2017-10-21 18:12:10 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>["0.20000000298\n", "0.20000000298\n", "0.20000000298\n", "0.20000000298\n", ""]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:12:11 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages?tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=" for 127.0.0.1 at 2017-10-21 18:52:19 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>["0.20000000298\n", "0.20000000298\n", "0.20000000298\n", "0.20000000298\n", ""]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:52:19 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 18:52:25 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Redirected to http://localhost:3000/pages?tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A
+Completed 302 Found in 5849ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/pages?tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A&tweets%5B%5D=0.20000000298%0A" for 127.0.0.1 at 2017-10-21 18:52:31 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>["0.20000000298\n", "0.20000000298\n", "0.20000000298\n", "0.20000000298\n", "0.20000000298\n"]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:52:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 18:52:47 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Redirected to http://localhost:3000/pages?tweets=0.20000000298%0A
+Completed 302 Found in 2367ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/pages?tweets=0.20000000298%0A" for 127.0.0.1 at 2017-10-21 18:52:49 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>"0.20000000298\n"}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 248ms (Views: 245.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:52:50 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages?tweets=0.20000000298%0A" for 127.0.0.1 at 2017-10-21 18:53:50 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>"0.20000000298\n"}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 254ms (Views: 244.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:53:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 18:53:57 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Redirected to http://localhost:3000/pages?tweets=0.20000000298%0A
+Completed 302 Found in 1759ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/pages?tweets=0.20000000298%0A" for 127.0.0.1 at 2017-10-21 18:53:59 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>"0.20000000298\n"}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:53:59 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages?tweets=0.20000000298%0A" for 127.0.0.1 at 2017-10-21 18:55:08 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>"0.20000000298\n"}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 239ms (Views: 230.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:55:09 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 18:55:14 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Redirected to http://localhost:3000/pages?tweets=0.20000000298%0A
+Completed 302 Found in 1614ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/pages?tweets=0.20000000298%0A" for 127.0.0.1 at 2017-10-21 18:55:15 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>"0.20000000298\n"}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:55:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages?tweets=0.20000000298%0A" for 127.0.0.1 at 2017-10-21 18:56:22 -0400
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:56:22 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>"0.20000000298\n"}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 276ms (Views: 273.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:56:23 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 18:56:27 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Redirected to http://localhost:3000/pages?tweets=-0.5%0A
+Completed 302 Found in 1599ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/pages?tweets=-0.5%0A" for 127.0.0.1 at 2017-10-21 18:56:29 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>"-0.5\n"}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:56:29 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages?tweets=-0.5%0A" for 127.0.0.1 at 2017-10-21 18:57:43 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>"-0.5\n"}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 248ms (Views: 240.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:57:44 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 18:57:52 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Redirected to http://localhost:3000/pages?tweets=0.0%0A
+Completed 302 Found in 5582ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/pages?tweets=0.0%0A" for 127.0.0.1 at 2017-10-21 18:57:58 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>"0.0\n"}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:57:58 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages?tweets=0.0%0A" for 127.0.0.1 at 2017-10-21 18:59:00 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>"0.0\n"}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 258ms (Views: 248.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:59:00 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 18:59:07 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Redirected to http://localhost:3000/pages?tweets%5B%5D=-0.300000011921%0A&tweets%5B%5D=-0.40000000596%0A&tweets%5B%5D=-0.600000023842%0A&tweets%5B%5D=0.0%0A&tweets%5B%5D=0.0%0A
+Completed 302 Found in 5205ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/pages?tweets%5B%5D=-0.300000011921%0A&tweets%5B%5D=-0.40000000596%0A&tweets%5B%5D=-0.600000023842%0A&tweets%5B%5D=0.0%0A&tweets%5B%5D=0.0%0A" for 127.0.0.1 at 2017-10-21 18:59:12 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>["-0.300000011921\n", "-0.40000000596\n", "-0.600000023842\n", "0.0\n", "0.0\n"]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:59:12 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages?tweets%5B%5D=-0.300000011921%0A&tweets%5B%5D=-0.40000000596%0A&tweets%5B%5D=-0.600000023842%0A&tweets%5B%5D=0.0%0A&tweets%5B%5D=0.0%0A" for 127.0.0.1 at 2017-10-21 18:59:53 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>["-0.300000011921\n", "-0.40000000596\n", "-0.600000023842\n", "0.0\n", "0.0\n"]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 232ms (Views: 223.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 18:59:53 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 18:59:57 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Redirected to http://localhost:3000/pages?tweets%5B%5D%5BTweet%3A+Just+out%2C+but+lightly+reported%3A+%22Fewest+jobless+claims+since+1973+show+firm+U.S.+Job+Market%22+Lowest+since+March+1973.+%40bpolitics%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Crooked+Hillary+Clinton+spent+hundreds+of+millions+of+dollars+more+on+Presidential+Election+than+I+did.+Facebook+was+on+her+side%2C+not+mine%21%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Keep+hearing+about+%22tiny%22+amount+of+money+spent+on+Facebook+ads.+What+about+the+billions+of+dollars+of+Fake+News+on+CNN%2C+ABC%2C+NBC+%26amp%3B+CBS%3F%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Officials+behind+the+now+discredited+%22Dossier%22+plead+the+Fifth.+Justice+Department+and%2For+FBI+should+immediately+release+who+paid+for+it.%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+%E2%80%9CTrump+hails+liberation+of+Raqqa+as+critical+breakthrough+in+anti-ISIS+campaign%E2%80%9D+https%3A%2F%2Ft.co%2F2eoYXJB7h0%5D=0.20000000298%0A
+Completed 302 Found in 5178ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/pages?tweets%5B%5D%5BTweet%3A+Just+out%2C+but+lightly+reported%3A+%22Fewest+jobless+claims+since+1973+show+firm+U.S.+Job+Market%22+Lowest+since+March+1973.+%40bpolitics%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Crooked+Hillary+Clinton+spent+hundreds+of+millions+of+dollars+more+on+Presidential+Election+than+I+did.+Facebook+was+on+her+side%2C+not+mine%21%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Keep+hearing+about+%22tiny%22+amount+of+money+spent+on+Facebook+ads.+What+about+the+billions+of+dollars+of+Fake+News+on+CNN%2C+ABC%2C+NBC+%26amp%3B+CBS%3F%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Officials+behind+the+now+discredited+%22Dossier%22+plead+the+Fifth.+Justice+Department+and%2For+FBI+should+immediately+release+who+paid+for+it.%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+%E2%80%9CTrump+hails+liberation+of+Raqqa+as+critical+breakthrough+in+anti-ISIS+campaign%E2%80%9D+https%3A%2F%2Ft.co%2F2eoYXJB7h0%5D=0.20000000298%0A" for 127.0.0.1 at 2017-10-21 19:00:02 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>[{"Tweet: Just out, but lightly reported: \"Fewest jobless claims since 1973 show firm U.S. Job Market\" Lowest since March 1973. @bpolitics"=>"0.20000000298\n", "Tweet: Crooked Hillary Clinton spent hundreds of millions of dollars more on Presidential Election than I did. Facebook was on her side, not mine!"=>"0.20000000298\n", "Tweet: Keep hearing about \"tiny\" amount of money spent on Facebook ads. What about the billions of dollars of Fake News on CNN, ABC, NBC &amp; CBS?"=>"0.20000000298\n", "Tweet: Officials behind the now discredited \"Dossier\" plead the Fifth. Justice Department and/or FBI should immediately release who paid for it."=>"0.20000000298\n", "Tweet: “Trump hails liberation of Raqqa as critical breakthrough in anti-ISIS campaign” https://t.co/2eoYXJB7h0"=>"0.20000000298\n"}]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 19:00:03 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages?tweets%5B%5D%5BTweet%3A+Just+out%2C+but+lightly+reported%3A+%22Fewest+jobless+claims+since+1973+show+firm+U.S.+Job+Market%22+Lowest+since+March+1973.+%40bpolitics%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Crooked+Hillary+Clinton+spent+hundreds+of+millions+of+dollars+more+on+Presidential+Election+than+I+did.+Facebook+was+on+her+side%2C+not+mine%21%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Keep+hearing+about+%22tiny%22+amount+of+money+spent+on+Facebook+ads.+What+about+the+billions+of+dollars+of+Fake+News+on+CNN%2C+ABC%2C+NBC+%26amp%3B+CBS%3F%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Officials+behind+the+now+discredited+%22Dossier%22+plead+the+Fifth.+Justice+Department+and%2For+FBI+should+immediately+release+who+paid+for+it.%5D=0.20000000298%0A&tweets%5B%5D%5BTweet%3A+%E2%80%9CTrump+hails+liberation+of+Raqqa+as+critical+breakthrough+in+anti-ISIS+campaign%E2%80%9D+https%3A%2F%2Ft.co%2F2eoYXJB7h0%5D=0.20000000298%0A" for 127.0.0.1 at 2017-10-21 19:00:25 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>[{"Tweet: Just out, but lightly reported: \"Fewest jobless claims since 1973 show firm U.S. Job Market\" Lowest since March 1973. @bpolitics"=>"0.20000000298\n", "Tweet: Crooked Hillary Clinton spent hundreds of millions of dollars more on Presidential Election than I did. Facebook was on her side, not mine!"=>"0.20000000298\n", "Tweet: Keep hearing about \"tiny\" amount of money spent on Facebook ads. What about the billions of dollars of Fake News on CNN, ABC, NBC &amp; CBS?"=>"0.20000000298\n", "Tweet: Officials behind the now discredited \"Dossier\" plead the Fifth. Justice Department and/or FBI should immediately release who paid for it."=>"0.20000000298\n", "Tweet: “Trump hails liberation of Raqqa as critical breakthrough in anti-ISIS campaign” https://t.co/2eoYXJB7h0"=>"0.20000000298\n"}]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 240ms (Views: 230.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 19:00:25 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 19:00:34 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Redirected to http://localhost:3000/pages?tweets%5B%5D%5BTweet%3A+Just+out%2C+but+lightly+reported%3A+%22Fewest+jobless+claims+since+1973+show+firm+U.S.+Job+Market%22+Lowest+since+March+1973.+%40bpolitics%5D=-0.300000011921%0A&tweets%5B%5D%5BTweet%3A+Crooked+Hillary+Clinton+spent+hundreds+of+millions+of+dollars+more+on+Presidential+Election+than+I+did.+Facebook+was+on+her+side%2C+not+mine%21%5D=-0.40000000596%0A&tweets%5B%5D%5BTweet%3A+Keep+hearing+about+%22tiny%22+amount+of+money+spent+on+Facebook+ads.+What+about+the+billions+of+dollars+of+Fake+News+on+CNN%2C+ABC%2C+NBC+%26amp%3B+CBS%3F%5D=-0.600000023842%0A&tweets%5B%5D%5BTweet%3A+Officials+behind+the+now+discredited+%22Dossier%22+plead+the+Fifth.+Justice+Department+and%2For+FBI+should+immediately+release+who+paid+for+it.%5D=0.0%0A&tweets%5B%5D%5BTweet%3A+%E2%80%9CTrump+hails+liberation+of+Raqqa+as+critical+breakthrough+in+anti-ISIS+campaign%E2%80%9D+https%3A%2F%2Ft.co%2F2eoYXJB7h0%5D=0.0%0A
+Completed 302 Found in 5825ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/pages?tweets%5B%5D%5BTweet%3A+Just+out%2C+but+lightly+reported%3A+%22Fewest+jobless+claims+since+1973+show+firm+U.S.+Job+Market%22+Lowest+since+March+1973.+%40bpolitics%5D=-0.300000011921%0A&tweets%5B%5D%5BTweet%3A+Crooked+Hillary+Clinton+spent+hundreds+of+millions+of+dollars+more+on+Presidential+Election+than+I+did.+Facebook+was+on+her+side%2C+not+mine%21%5D=-0.40000000596%0A&tweets%5B%5D%5BTweet%3A+Keep+hearing+about+%22tiny%22+amount+of+money+spent+on+Facebook+ads.+What+about+the+billions+of+dollars+of+Fake+News+on+CNN%2C+ABC%2C+NBC+%26amp%3B+CBS%3F%5D=-0.600000023842%0A&tweets%5B%5D%5BTweet%3A+Officials+behind+the+now+discredited+%22Dossier%22+plead+the+Fifth.+Justice+Department+and%2For+FBI+should+immediately+release+who+paid+for+it.%5D=0.0%0A&tweets%5B%5D%5BTweet%3A+%E2%80%9CTrump+hails+liberation+of+Raqqa+as+critical+breakthrough+in+anti-ISIS+campaign%E2%80%9D+https%3A%2F%2Ft.co%2F2eoYXJB7h0%5D=0.0%0A" for 127.0.0.1 at 2017-10-21 19:00:40 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>[{"Tweet: Just out, but lightly reported: \"Fewest jobless claims since 1973 show firm U.S. Job Market\" Lowest since March 1973. @bpolitics"=>"-0.300000011921\n", "Tweet: Crooked Hillary Clinton spent hundreds of millions of dollars more on Presidential Election than I did. Facebook was on her side, not mine!"=>"-0.40000000596\n", "Tweet: Keep hearing about \"tiny\" amount of money spent on Facebook ads. What about the billions of dollars of Fake News on CNN, ABC, NBC &amp; CBS?"=>"-0.600000023842\n", "Tweet: Officials behind the now discredited \"Dossier\" plead the Fifth. Justice Department and/or FBI should immediately release who paid for it."=>"0.0\n", "Tweet: “Trump hails liberation of Raqqa as critical breakthrough in anti-ISIS campaign” https://t.co/2eoYXJB7h0"=>"0.0\n"}]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 19:00:40 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages?tweets%5B%5D%5BTweet%3A+Just+out%2C+but+lightly+reported%3A+%22Fewest+jobless+claims+since+1973+show+firm+U.S.+Job+Market%22+Lowest+since+March+1973.+%40bpolitics%5D=-0.300000011921%0A&tweets%5B%5D%5BTweet%3A+Crooked+Hillary+Clinton+spent+hundreds+of+millions+of+dollars+more+on+Presidential+Election+than+I+did.+Facebook+was+on+her+side%2C+not+mine%21%5D=-0.40000000596%0A&tweets%5B%5D%5BTweet%3A+Keep+hearing+about+%22tiny%22+amount+of+money+spent+on+Facebook+ads.+What+about+the+billions+of+dollars+of+Fake+News+on+CNN%2C+ABC%2C+NBC+%26amp%3B+CBS%3F%5D=-0.600000023842%0A&tweets%5B%5D%5BTweet%3A+Officials+behind+the+now+discredited+%22Dossier%22+plead+the+Fifth.+Justice+Department+and%2For+FBI+should+immediately+release+who+paid+for+it.%5D=0.0%0A&tweets%5B%5D%5BTweet%3A+%E2%80%9CTrump+hails+liberation+of+Raqqa+as+critical+breakthrough+in+anti-ISIS+campaign%E2%80%9D+https%3A%2F%2Ft.co%2F2eoYXJB7h0%5D=0.0%0A" for 127.0.0.1 at 2017-10-21 19:03:13 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>[{"Tweet: Just out, but lightly reported: \"Fewest jobless claims since 1973 show firm U.S. Job Market\" Lowest since March 1973. @bpolitics"=>"-0.300000011921\n", "Tweet: Crooked Hillary Clinton spent hundreds of millions of dollars more on Presidential Election than I did. Facebook was on her side, not mine!"=>"-0.40000000596\n", "Tweet: Keep hearing about \"tiny\" amount of money spent on Facebook ads. What about the billions of dollars of Fake News on CNN, ABC, NBC &amp; CBS?"=>"-0.600000023842\n", "Tweet: Officials behind the now discredited \"Dossier\" plead the Fifth. Justice Department and/or FBI should immediately release who paid for it."=>"0.0\n", "Tweet: “Trump hails liberation of Raqqa as critical breakthrough in anti-ISIS campaign” https://t.co/2eoYXJB7h0"=>"0.0\n"}]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 260ms (Views: 251.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 19:03:14 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages?tweets%5B%5D%5BTweet%3A+Just+out%2C+but+lightly+reported%3A+%22Fewest+jobless+claims+since+1973+show+firm+U.S.+Job+Market%22+Lowest+since+March+1973.+%40bpolitics%5D=-0.300000011921%0A&tweets%5B%5D%5BTweet%3A+Crooked+Hillary+Clinton+spent+hundreds+of+millions+of+dollars+more+on+Presidential+Election+than+I+did.+Facebook+was+on+her+side%2C+not+mine%21%5D=-0.40000000596%0A&tweets%5B%5D%5BTweet%3A+Keep+hearing+about+%22tiny%22+amount+of+money+spent+on+Facebook+ads.+What+about+the+billions+of+dollars+of+Fake+News+on+CNN%2C+ABC%2C+NBC+%26amp%3B+CBS%3F%5D=-0.600000023842%0A&tweets%5B%5D%5BTweet%3A+Officials+behind+the+now+discredited+%22Dossier%22+plead+the+Fifth.+Justice+Department+and%2For+FBI+should+immediately+release+who+paid+for+it.%5D=0.0%0A&tweets%5B%5D%5BTweet%3A+%E2%80%9CTrump+hails+liberation+of+Raqqa+as+critical+breakthrough+in+anti-ISIS+campaign%E2%80%9D+https%3A%2F%2Ft.co%2F2eoYXJB7h0%5D=0.0%0A" for 127.0.0.1 at 2017-10-21 19:03:16 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>[{"Tweet: Just out, but lightly reported: \"Fewest jobless claims since 1973 show firm U.S. Job Market\" Lowest since March 1973. @bpolitics"=>"-0.300000011921\n", "Tweet: Crooked Hillary Clinton spent hundreds of millions of dollars more on Presidential Election than I did. Facebook was on her side, not mine!"=>"-0.40000000596\n", "Tweet: Keep hearing about \"tiny\" amount of money spent on Facebook ads. What about the billions of dollars of Fake News on CNN, ABC, NBC &amp; CBS?"=>"-0.600000023842\n", "Tweet: Officials behind the now discredited \"Dossier\" plead the Fifth. Justice Department and/or FBI should immediately release who paid for it."=>"0.0\n", "Tweet: “Trump hails liberation of Raqqa as critical breakthrough in anti-ISIS campaign” https://t.co/2eoYXJB7h0"=>"0.0\n"}]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 19:03:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 19:03:21 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Redirected to http://localhost:3000/pages?tweets%5B%5D%5BTweet%3A+Just+out%2C+but+lightly+reported%3A+%22Fewest+jobless+claims+since+1973+show+firm+U.S.+Job+Market%22+Lowest+since+March+1973.+%40bpolitics%5D=-0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Crooked+Hillary+Clinton+spent+hundreds+of+millions+of+dollars+more+on+Presidential+Election+than+I+did.+Facebook+was+on+her+side%2C+not+mine%21%5D=-0.40000000596%0A&tweets%5B%5D%5BTweet%3A+Keep+hearing+about+%22tiny%22+amount+of+money+spent+on+Facebook+ads.+What+about+the+billions+of+dollars+of+Fake+News+on+CNN%2C+ABC%2C+NBC+%26amp%3B+CBS%3F%5D=-0.600000023842%0A&tweets%5B%5D%5BTweet%3A+Officials+behind+the+now+discredited+%22Dossier%22+plead+the+Fifth.+Justice+Department+and%2For+FBI+should+immediately+release+who+paid+for+it.%5D=0.0%0A&tweets%5B%5D%5BTweet%3A+%E2%80%9CTrump+hails+liberation+of+Raqqa+as+critical+breakthrough+in+anti-ISIS+campaign%E2%80%9D+https%3A%2F%2Ft.co%2F2eoYXJB7h0%5D=0.0%0A
+Completed 302 Found in 5500ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/pages?tweets%5B%5D%5BTweet%3A+Just+out%2C+but+lightly+reported%3A+%22Fewest+jobless+claims+since+1973+show+firm+U.S.+Job+Market%22+Lowest+since+March+1973.+%40bpolitics%5D=-0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Crooked+Hillary+Clinton+spent+hundreds+of+millions+of+dollars+more+on+Presidential+Election+than+I+did.+Facebook+was+on+her+side%2C+not+mine%21%5D=-0.40000000596%0A&tweets%5B%5D%5BTweet%3A+Keep+hearing+about+%22tiny%22+amount+of+money+spent+on+Facebook+ads.+What+about+the+billions+of+dollars+of+Fake+News+on+CNN%2C+ABC%2C+NBC+%26amp%3B+CBS%3F%5D=-0.600000023842%0A&tweets%5B%5D%5BTweet%3A+Officials+behind+the+now+discredited+%22Dossier%22+plead+the+Fifth.+Justice+Department+and%2For+FBI+should+immediately+release+who+paid+for+it.%5D=0.0%0A&tweets%5B%5D%5BTweet%3A+%E2%80%9CTrump+hails+liberation+of+Raqqa+as+critical+breakthrough+in+anti-ISIS+campaign%E2%80%9D+https%3A%2F%2Ft.co%2F2eoYXJB7h0%5D=0.0%0A" for 127.0.0.1 at 2017-10-21 19:03:27 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>[{"Tweet: Just out, but lightly reported: \"Fewest jobless claims since 1973 show firm U.S. Job Market\" Lowest since March 1973. @bpolitics"=>"-0.20000000298\n", "Tweet: Crooked Hillary Clinton spent hundreds of millions of dollars more on Presidential Election than I did. Facebook was on her side, not mine!"=>"-0.40000000596\n", "Tweet: Keep hearing about \"tiny\" amount of money spent on Facebook ads. What about the billions of dollars of Fake News on CNN, ABC, NBC &amp; CBS?"=>"-0.600000023842\n", "Tweet: Officials behind the now discredited \"Dossier\" plead the Fifth. Justice Department and/or FBI should immediately release who paid for it."=>"0.0\n", "Tweet: “Trump hails liberation of Raqqa as critical breakthrough in anti-ISIS campaign” https://t.co/2eoYXJB7h0"=>"0.0\n"}]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 19:03:27 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages?tweets%5B%5D%5BTweet%3A+Just+out%2C+but+lightly+reported%3A+%22Fewest+jobless+claims+since+1973+show+firm+U.S.+Job+Market%22+Lowest+since+March+1973.+%40bpolitics%5D=-0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Crooked+Hillary+Clinton+spent+hundreds+of+millions+of+dollars+more+on+Presidential+Election+than+I+did.+Facebook+was+on+her+side%2C+not+mine%21%5D=-0.40000000596%0A&tweets%5B%5D%5BTweet%3A+Keep+hearing+about+%22tiny%22+amount+of+money+spent+on+Facebook+ads.+What+about+the+billions+of+dollars+of+Fake+News+on+CNN%2C+ABC%2C+NBC+%26amp%3B+CBS%3F%5D=-0.600000023842%0A&tweets%5B%5D%5BTweet%3A+Officials+behind+the+now+discredited+%22Dossier%22+plead+the+Fifth.+Justice+Department+and%2For+FBI+should+immediately+release+who+paid+for+it.%5D=0.0%0A&tweets%5B%5D%5BTweet%3A+%E2%80%9CTrump+hails+liberation+of+Raqqa+as+critical+breakthrough+in+anti-ISIS+campaign%E2%80%9D+https%3A%2F%2Ft.co%2F2eoYXJB7h0%5D=0.0%0A" for 127.0.0.1 at 2017-10-21 19:05:40 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>[{"Tweet: Just out, but lightly reported: \"Fewest jobless claims since 1973 show firm U.S. Job Market\" Lowest since March 1973. @bpolitics"=>"-0.20000000298\n", "Tweet: Crooked Hillary Clinton spent hundreds of millions of dollars more on Presidential Election than I did. Facebook was on her side, not mine!"=>"-0.40000000596\n", "Tweet: Keep hearing about \"tiny\" amount of money spent on Facebook ads. What about the billions of dollars of Fake News on CNN, ABC, NBC &amp; CBS?"=>"-0.600000023842\n", "Tweet: Officials behind the now discredited \"Dossier\" plead the Fifth. Justice Department and/or FBI should immediately release who paid for it."=>"0.0\n", "Tweet: “Trump hails liberation of Raqqa as critical breakthrough in anti-ISIS campaign” https://t.co/2eoYXJB7h0"=>"0.0\n"}]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 261ms (Views: 252.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 19:05:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 19:05:47 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Redirected to http://localhost:3000/pages?tweets%5B%5D%5Bthis+big+buffalo%5D=0.40000000596%0A&tweets%5B%5D%5Bpooop%5D=0.0%0A&tweets%5B%5D%5Bcraaap%5D=0.0%0A&tweets%5B%5D%5Bwob+wob+wob%5D=0.0%0A&tweets%5B%5D%5Bi+go+hard+in+tha+paint%5D=-0.10000000149%0A
+Completed 302 Found in 5250ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/pages?tweets%5B%5D%5Bthis+big+buffalo%5D=0.40000000596%0A&tweets%5B%5D%5Bpooop%5D=0.0%0A&tweets%5B%5D%5Bcraaap%5D=0.0%0A&tweets%5B%5D%5Bwob+wob+wob%5D=0.0%0A&tweets%5B%5D%5Bi+go+hard+in+tha+paint%5D=-0.10000000149%0A" for 127.0.0.1 at 2017-10-21 19:05:52 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>[{"this big buffalo"=>"0.40000000596\n", "pooop"=>"0.0\n", "craaap"=>"0.0\n", "wob wob wob"=>"0.0\n", "i go hard in tha paint"=>"-0.10000000149\n"}]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 19:05:52 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages?tweets%5B%5D%5Bthis+big+buffalo%5D=0.40000000596%0A&tweets%5B%5D%5Bpooop%5D=0.0%0A&tweets%5B%5D%5Bcraaap%5D=0.0%0A&tweets%5B%5D%5Bwob+wob+wob%5D=0.0%0A&tweets%5B%5D%5Bi+go+hard+in+tha+paint%5D=-0.10000000149%0A" for 127.0.0.1 at 2017-10-21 19:06:32 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>[{"this big buffalo"=>"0.40000000596\n", "pooop"=>"0.0\n", "craaap"=>"0.0\n", "wob wob wob"=>"0.0\n", "i go hard in tha paint"=>"-0.10000000149\n"}]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 287ms (Views: 279.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 19:06:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 19:06:34 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Redirected to http://localhost:3000/pages?tweets%5B%5D%5Bthis+big+buffalo%5D=0.40000000596%0A&tweets%5B%5D%5Bpoop%5D=0.0%0A&tweets%5B%5D%5Bcrap%5D=-0.40000000596%0A&tweets%5B%5D%5Bwob+wob+wob%5D=0.0%0A&tweets%5B%5D%5Bi+go+hard+in+tha+paint%5D=-0.10000000149%0A
+Completed 302 Found in 5522ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/pages?tweets%5B%5D%5Bthis+big+buffalo%5D=0.40000000596%0A&tweets%5B%5D%5Bpoop%5D=0.0%0A&tweets%5B%5D%5Bcrap%5D=-0.40000000596%0A&tweets%5B%5D%5Bwob+wob+wob%5D=0.0%0A&tweets%5B%5D%5Bi+go+hard+in+tha+paint%5D=-0.10000000149%0A" for 127.0.0.1 at 2017-10-21 19:06:39 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>[{"this big buffalo"=>"0.40000000596\n", "poop"=>"0.0\n", "crap"=>"-0.40000000596\n", "wob wob wob"=>"0.0\n", "i go hard in tha paint"=>"-0.10000000149\n"}]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 19:06:39 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages?tweets%5B%5D%5Bthis+big+buffalo%5D=0.40000000596%0A&tweets%5B%5D%5Bpoop%5D=0.0%0A&tweets%5B%5D%5Bcrap%5D=-0.40000000596%0A&tweets%5B%5D%5Bwob+wob+wob%5D=0.0%0A&tweets%5B%5D%5Bi+go+hard+in+tha+paint%5D=-0.10000000149%0A" for 127.0.0.1 at 2017-10-21 19:10:41 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>[{"this big buffalo"=>"0.40000000596\n", "poop"=>"0.0\n", "crap"=>"-0.40000000596\n", "wob wob wob"=>"0.0\n", "i go hard in tha paint"=>"-0.10000000149\n"}]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 294ms (Views: 280.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 19:10:42 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 19:10:45 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Completed 500 Internal Server Error in 18377ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `values' for #<Array:0x007f870c82bb90>
+Did you mean?  values_at):
+  
+app/controllers/pages_controller.rb:34:in `create'
+Started GET "/pages" for 127.0.0.1 at 2017-10-21 19:12:00 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.0ms)
+Started GET "/" for 127.0.0.1 at 2017-10-21 19:12:01 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 322ms (Views: 312.5ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 72ms (Views: 71.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 19:12:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 19:12:07 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Completed 500 Internal Server Error in 660ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `results' for #<PagesController:0x007fee19b2b740>
+Did you mean?  result):
+  
+app/sentiment.rb:5:in `block in get_sentiment'
+app/sentiment.rb:3:in `each'
+app/sentiment.rb:3:in `get_sentiment'
+app/controllers/pages_controller.rb:34:in `create'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 19:12:29 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Started GET "/pages" for 127.0.0.1 at 2017-10-21 19:12:42 -0400
+Processing by PagesController#index as HTML
+Completed 500 Internal Server Error in 18735ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `values' for #<Array:0x007fd1fa73e640>
+Did you mean?  values_at):
+  
+app/controllers/pages_controller.rb:34:in `create'
+Started GET "/p" for 127.0.0.1 at 2017-10-21 19:12:48 -0400
+Started GET "/" for 127.0.0.1 at 2017-10-21 19:12:48 -0400
+Started GET "/" for 127.0.0.1 at 2017-10-21 19:12:48 -0400
+  
+Processing by PagesController#index as HTML
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+ActionController::RoutingError (No route matches [GET] "/p"):
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+  
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendered pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 6586ms (Views: 632.8ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 621ms (Views: 620.2ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 626ms (Views: 625.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 19:12:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 19:12:51 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Completed 500 Internal Server Error in 17782ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `values' for #<Array:0x007fd1fa4e3f58>
+Did you mean?  values_at):
+  
+app/controllers/pages_controller.rb:34:in `create'
+Started GET "/pages" for 127.0.0.1 at 2017-10-21 19:13:26 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.4ms)
+Started GET "/p" for 127.0.0.1 at 2017-10-21 19:13:27 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/p"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-21 19:13:27 -0400
+Processing by PagesController#index as HTML
+Started GET "/" for 127.0.0.1 at 2017-10-21 19:13:27 -0400
+  Rendering pages/index.html.erb within layouts/application
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 325ms (Views: 324.6ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 411ms (Views: 373.8ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 766ms (Views: 756.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 19:13:27 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 19:13:32 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Redirected to http://localhost:3000/pages?tweets%5B%5D=-0.20000000298%0A&tweets%5B%5D=-0.40000000596%0A&tweets%5B%5D=-0.600000023842%0A&tweets%5B%5D=0.0%0A&tweets%5B%5D=0.0%0A&tweets%5B%5D=&tweets%5B%5D=0.0%0A&tweets%5B%5D=-0.40000000596%0A&tweets%5B%5D=-0.800000011921%0A&tweets%5B%5D=-0.20000000298%0A&tweets%5B%5D=0.899999976158%0A&tweets%5B%5D=0.40000000596%0A&tweets%5B%5D=0.0%0A&tweets%5B%5D=0.0%0A&tweets%5B%5D=0.0%0A&tweets%5B%5D=0.899999976158%0A&tweets%5B%5D=-0.300000011921%0A&tweets%5B%5D=0.40000000596%0A&tweets%5B%5D=0.699999988079%0A
+Completed 302 Found in 18497ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/pages?tweets%5B%5D=-0.20000000298%0A&tweets%5B%5D=-0.40000000596%0A&tweets%5B%5D=-0.600000023842%0A&tweets%5B%5D=0.0%0A&tweets%5B%5D=0.0%0A&tweets%5B%5D=&tweets%5B%5D=0.0%0A&tweets%5B%5D=-0.40000000596%0A&tweets%5B%5D=-0.800000011921%0A&tweets%5B%5D=-0.20000000298%0A&tweets%5B%5D=0.899999976158%0A&tweets%5B%5D=0.40000000596%0A&tweets%5B%5D=0.0%0A&tweets%5B%5D=0.0%0A&tweets%5B%5D=0.0%0A&tweets%5B%5D=0.899999976158%0A&tweets%5B%5D=-0.300000011921%0A&tweets%5B%5D=0.40000000596%0A&tweets%5B%5D=0.699999988079%0A" for 127.0.0.1 at 2017-10-21 19:13:51 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>["-0.20000000298\n", "-0.40000000596\n", "-0.600000023842\n", "0.0\n", "0.0\n", "", "0.0\n", "-0.40000000596\n", "-0.800000011921\n", "-0.20000000298\n", "0.899999976158\n", "0.40000000596\n", "0.0\n", "0.0\n", "0.0\n", "0.899999976158\n", "-0.300000011921\n", "0.40000000596\n", "0.699999988079\n"]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 19:13:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages?tweets%5B%5D=-0.20000000298%0A&tweets%5B%5D=-0.40000000596%0A&tweets%5B%5D=-0.600000023842%0A&tweets%5B%5D=0.0%0A&tweets%5B%5D=0.0%0A&tweets%5B%5D=&tweets%5B%5D=0.0%0A&tweets%5B%5D=-0.40000000596%0A&tweets%5B%5D=-0.800000011921%0A&tweets%5B%5D=-0.20000000298%0A&tweets%5B%5D=0.899999976158%0A&tweets%5B%5D=0.40000000596%0A&tweets%5B%5D=0.0%0A&tweets%5B%5D=0.0%0A&tweets%5B%5D=0.0%0A&tweets%5B%5D=0.899999976158%0A&tweets%5B%5D=-0.300000011921%0A&tweets%5B%5D=0.40000000596%0A&tweets%5B%5D=0.699999988079%0A" for 127.0.0.1 at 2017-10-21 19:14:30 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>["-0.20000000298\n", "-0.40000000596\n", "-0.600000023842\n", "0.0\n", "0.0\n", "", "0.0\n", "-0.40000000596\n", "-0.800000011921\n", "-0.20000000298\n", "0.899999976158\n", "0.40000000596\n", "0.0\n", "0.0\n", "0.0\n", "0.899999976158\n", "-0.300000011921\n", "0.40000000596\n", "0.699999988079\n"]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 291ms (Views: 280.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 19:14:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 19:14:33 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Redirected to http://localhost:3000/pages?tweets%5B%5D%5BTweet%3A+Just+out%2C+but+lightly+reported%3A+%22Fewest+jobless+claims+since+1973+show+firm+U.S.+Job+Market%22+Lowest+since+March+1973.+%40bpolitics%5D=-0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Crooked+Hillary+Clinton+spent+hundreds+of+millions+of+dollars+more+on+Presidential+Election+than+I+did.+Facebook+was+on+her+side%2C+not+mine%21%5D=-0.40000000596%0A&tweets%5B%5D%5BTweet%3A+Keep+hearing+about+%22tiny%22+amount+of+money+spent+on+Facebook+ads.+What+about+the+billions+of+dollars+of+Fake+News+on+CNN%2C+ABC%2C+NBC+%26amp%3B+CBS%3F%5D=-0.600000023842%0A&tweets%5B%5D%5BTweet%3A+Officials+behind+the+now+discredited+%22Dossier%22+plead+the+Fifth.+Justice+Department+and%2For+FBI+should+immediately+release+who+paid+for+it.%5D=0.0%0A&tweets%5B%5D%5BTweet%3A+%E2%80%9CTrump+hails+liberation+of+Raqqa+as+critical+breakthrough+in+anti-ISIS+campaign%E2%80%9D+https%3A%2F%2Ft.co%2F2eoYXJB7h0%5D=0.0%0A&tweets%5B%5D%5BTweet%3A+Stock+Market+hits+another+all+time+high+on+Friday.+5.3+trillion+dollars+up+since+Election.+Fake+News+doesn%27t+spent+much+time+on+this%21%5D=&tweets%5B%5D%5BTweet%3A+People+get+what+is+going+on%21+https%3A%2F%2Ft.co%2FPdg7VqQv6M%5D=0.0%0A&tweets%5B%5D%5BTweet%3A+Subject+to+the+receipt+of+further+information%2C+I+will+be+allowing%2C+as+President%2C+the+long+blocked+and+classified+JFK+FILES+to+be+opened.%5D=-0.40000000596%0A&tweets%5B%5D%5BTweet%3A+I+hope+the+Fake+News+Media+keeps+talking+about+Wacky+Congresswoman+Wilson+in+that+she%2C+as+a+representative%2C+is+killing+the+Democrat+Party%21%5D=-0.800000011921%0A&tweets%5B%5D%5BTweet%3A+Budget+that+just+passed+is+a+really+big+deal%2C+especially+in+terms+of+what+will+be+the+biggest+tax+cut+in+U.S.+history+-+MSM+barely+covered%21%5D=-0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Great+book+just+out%2C+%22A+Place+Called+Heaven%2C%22+by+Dr.+Robert+Jeffress+-+A+wonderful+man%21%5D=0.899999976158%0A&tweets%5B%5D%5BTweet%3A+This+is+a+once-in-a-generation+opportunity+to+offer+historic+tax+relief+to+the+American+people%21+Join+me+today%3A%E2%80%A6+https%3A%2F%2Ft.co%2FfaXIjyR08M%5D=0.40000000596%0A&tweets%5B%5D%5BTweet%3A+Today%2C+it+was+an+honor+to+have+%40UN%0ASecretary-General+%40AntonioGuterres+at+the+%40WhiteHouse.+Speaking+for+the+U.S.A.%2C%E2%80%A6+https%3A%2F%2Ft.co%2FoKRVJ29m2v%5D=0.0%0A&tweets%5B%5D%5BTweet%3A+Thank+you+%40GeraldoRivera+%40FoxandFriends.+Agree%21+https%3A%2F%2Ft.co%2F8cZLdAbgzw%5D=0.0%0A&tweets%5B%5D%5BTweet%3A+Just+out+report%3A+%22United+Kingdom+crime+rises+13%25+annually+amid+spread+of+Radical+Islamic+terror.%22+Not+good%2C+we+must+keep+America+safe%21%5D=0.0%0A&tweets%5B%5D%5BTweet%3A+....This+now+allows+for+the+passage+of+large+scale+Tax+Cuts+%28and+Reform%29%2C+which+will+be+the+biggest+in+the+history+of+our+country%21%5D=0.899999976158%0A&tweets%5B%5D%5BTweet%3A+The+Budget+passed+late+last+night%2C+51+to+49.+We+got+ZERO+Democrat+votes+with+only+Rand+Paul+%28he+will+vote+for+Tax+Cuts%29+voting+against.....%5D=-0.300000011921%0A&tweets%5B%5D%5BTweet%3A+Great+news+on+the+2018+budget+%40SenateMajLdr+McConnell+-+first+step+toward+delivering+MASSIVE+tax+cuts+for+the+Ameri%E2%80%A6+https%3A%2F%2Ft.co%2FpxcNfDTNAd%5D=0.40000000596%0A&tweets%5B%5D%5BTweet%3A+Big+ratings+getter+%40seanhannity+and+Apprentice+Champion+John+Rich+are+right+now+going+on+stage+in+Las+Vegas+for+%23VegasStrong.+Great+Show%21%5D=0.699999988079%0A
+Completed 302 Found in 17820ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/pages?tweets%5B%5D%5BTweet%3A+Just+out%2C+but+lightly+reported%3A+%22Fewest+jobless+claims+since+1973+show+firm+U.S.+Job+Market%22+Lowest+since+March+1973.+%40bpolitics%5D=-0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Crooked+Hillary+Clinton+spent+hundreds+of+millions+of+dollars+more+on+Presidential+Election+than+I+did.+Facebook+was+on+her+side%2C+not+mine%21%5D=-0.40000000596%0A&tweets%5B%5D%5BTweet%3A+Keep+hearing+about+%22tiny%22+amount+of+money+spent+on+Facebook+ads.+What+about+the+billions+of+dollars+of+Fake+News+on+CNN%2C+ABC%2C+NBC+%26amp%3B+CBS%3F%5D=-0.600000023842%0A&tweets%5B%5D%5BTweet%3A+Officials+behind+the+now+discredited+%22Dossier%22+plead+the+Fifth.+Justice+Department+and%2For+FBI+should+immediately+release+who+paid+for+it.%5D=0.0%0A&tweets%5B%5D%5BTweet%3A+%E2%80%9CTrump+hails+liberation+of+Raqqa+as+critical+breakthrough+in+anti-ISIS+campaign%E2%80%9D+https%3A%2F%2Ft.co%2F2eoYXJB7h0%5D=0.0%0A&tweets%5B%5D%5BTweet%3A+Stock+Market+hits+another+all+time+high+on+Friday.+5.3+trillion+dollars+up+since+Election.+Fake+News+doesn%27t+spent+much+time+on+this%21%5D=&tweets%5B%5D%5BTweet%3A+People+get+what+is+going+on%21+https%3A%2F%2Ft.co%2FPdg7VqQv6M%5D=0.0%0A&tweets%5B%5D%5BTweet%3A+Subject+to+the+receipt+of+further+information%2C+I+will+be+allowing%2C+as+President%2C+the+long+blocked+and+classified+JFK+FILES+to+be+opened.%5D=-0.40000000596%0A&tweets%5B%5D%5BTweet%3A+I+hope+the+Fake+News+Media+keeps+talking+about+Wacky+Congresswoman+Wilson+in+that+she%2C+as+a+representative%2C+is+killing+the+Democrat+Party%21%5D=-0.800000011921%0A&tweets%5B%5D%5BTweet%3A+Budget+that+just+passed+is+a+really+big+deal%2C+especially+in+terms+of+what+will+be+the+biggest+tax+cut+in+U.S.+history+-+MSM+barely+covered%21%5D=-0.20000000298%0A&tweets%5B%5D%5BTweet%3A+Great+book+just+out%2C+%22A+Place+Called+Heaven%2C%22+by+Dr.+Robert+Jeffress+-+A+wonderful+man%21%5D=0.899999976158%0A&tweets%5B%5D%5BTweet%3A+This+is+a+once-in-a-generation+opportunity+to+offer+historic+tax+relief+to+the+American+people%21+Join+me+today%3A%E2%80%A6+https%3A%2F%2Ft.co%2FfaXIjyR08M%5D=0.40000000596%0A&tweets%5B%5D%5BTweet%3A+Today%2C+it+was+an+honor+to+have+%40UN%0ASecretary-General+%40AntonioGuterres+at+the+%40WhiteHouse.+Speaking+for+the+U.S.A.%2C%E2%80%A6+https%3A%2F%2Ft.co%2FoKRVJ29m2v%5D=0.0%0A&tweets%5B%5D%5BTweet%3A+Thank+you+%40GeraldoRivera+%40FoxandFriends.+Agree%21+https%3A%2F%2Ft.co%2F8cZLdAbgzw%5D=0.0%0A&tweets%5B%5D%5BTweet%3A+Just+out+report%3A+%22United+Kingdom+crime+rises+13%25+annually+amid+spread+of+Radical+Islamic+terror.%22+Not+good%2C+we+must+keep+America+safe%21%5D=0.0%0A&tweets%5B%5D%5BTweet%3A+....This+now+allows+for+the+passage+of+large+scale+Tax+Cuts+%28and+Reform%29%2C+which+will+be+the+biggest+in+the+history+of+our+country%21%5D=0.899999976158%0A&tweets%5B%5D%5BTweet%3A+The+Budget+passed+late+last+night%2C+51+to+49.+We+got+ZERO+Democrat+votes+with+only+Rand+Paul+%28he+will+vote+for+Tax+Cuts%29+voting+against.....%5D=-0.300000011921%0A&tweets%5B%5D%5BTweet%3A+Great+news+on+the+2018+budget+%40SenateMajLdr+McConnell+-+first+step+toward+delivering+MASSIVE+tax+cuts+for+the+Ameri%E2%80%A6+https%3A%2F%2Ft.co%2FpxcNfDTNAd%5D=0.40000000596%0A&tweets%5B%5D%5BTweet%3A+Big+ratings+getter+%40seanhannity+and+Apprentice+Champion+John+Rich+are+right+now+going+on+stage+in+Las+Vegas+for+%23VegasStrong.+Great+Show%21%5D=0.699999988079%0A" for 127.0.0.1 at 2017-10-21 19:14:50 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>[{"Tweet: Just out, but lightly reported: \"Fewest jobless claims since 1973 show firm U.S. Job Market\" Lowest since March 1973. @bpolitics"=>"-0.20000000298\n", "Tweet: Crooked Hillary Clinton spent hundreds of millions of dollars more on Presidential Election than I did. Facebook was on her side, not mine!"=>"-0.40000000596\n", "Tweet: Keep hearing about \"tiny\" amount of money spent on Facebook ads. What about the billions of dollars of Fake News on CNN, ABC, NBC &amp; CBS?"=>"-0.600000023842\n", "Tweet: Officials behind the now discredited \"Dossier\" plead the Fifth. Justice Department and/or FBI should immediately release who paid for it."=>"0.0\n", "Tweet: “Trump hails liberation of Raqqa as critical breakthrough in anti-ISIS campaign” https://t.co/2eoYXJB7h0"=>"0.0\n", "Tweet: Stock Market hits another all time high on Friday. 5.3 trillion dollars up since Election. Fake News doesn't spent much time on this!"=>"", "Tweet: People get what is going on! https://t.co/Pdg7VqQv6M"=>"0.0\n", "Tweet: Subject to the receipt of further information, I will be allowing, as President, the long blocked and classified JFK FILES to be opened."=>"-0.40000000596\n", "Tweet: I hope the Fake News Media keeps talking about Wacky Congresswoman Wilson in that she, as a representative, is killing the Democrat Party!"=>"-0.800000011921\n", "Tweet: Budget that just passed is a really big deal, especially in terms of what will be the biggest tax cut in U.S. history - MSM barely covered!"=>"-0.20000000298\n", "Tweet: Great book just out, \"A Place Called Heaven,\" by Dr. Robert Jeffress - A wonderful man!"=>"0.899999976158\n", "Tweet: This is a once-in-a-generation opportunity to offer historic tax relief to the American people! Join me today:… https://t.co/faXIjyR08M"=>"0.40000000596\n", "Tweet: Today, it was an honor to have @UN\nSecretary-General @AntonioGuterres at the @WhiteHouse. Speaking for the U.S.A.,… https://t.co/oKRVJ29m2v"=>"0.0\n", "Tweet: Thank you @GeraldoRivera @FoxandFriends. Agree! https://t.co/8cZLdAbgzw"=>"0.0\n", "Tweet: Just out report: \"United Kingdom crime rises 13% annually amid spread of Radical Islamic terror.\" Not good, we must keep America safe!"=>"0.0\n", "Tweet: ....This now allows for the passage of large scale Tax Cuts (and Reform), which will be the biggest in the history of our country!"=>"0.899999976158\n", "Tweet: The Budget passed late last night, 51 to 49. We got ZERO Democrat votes with only Rand Paul (he will vote for Tax Cuts) voting against....."=>"-0.300000011921\n", "Tweet: Great news on the 2018 budget @SenateMajLdr McConnell - first step toward delivering MASSIVE tax cuts for the Ameri… https://t.co/pxcNfDTNAd"=>"0.40000000596\n", "Tweet: Big ratings getter @seanhannity and Apprentice Champion John Rich are right now going on stage in Las Vegas for #VegasStrong. Great Show!"=>"0.699999988079\n"}]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 19:14:50 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
