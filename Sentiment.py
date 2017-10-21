@@ -2,6 +2,8 @@ from google.cloud import language
 from google.cloud.language import enums
 from google.cloud.language import types
 
+import sys
+
 # Instantiates a client
 client = language.LanguageServiceClient()
 def SentimentAnalysis(text):
@@ -17,4 +19,6 @@ def SentimentAnalysis(text):
 
     return sentimentScore
 
-print SentimentAnalysis("We are the best ever!")
+text = sys.argv[1]
+
+print SentimentAnalysis(text)
