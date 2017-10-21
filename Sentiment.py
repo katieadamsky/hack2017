@@ -6,10 +6,12 @@ import sys
 
 # Instantiates a client
 client = language.LanguageServiceClient()
-def SentimentAnalysis(text):
+
+def SentimentAnalysis(tweet):
+
     # The text to analyze
     document = types.Document(
-        content=text,
+        content=tweet,
         type=enums.Document.Type.PLAIN_TEXT)
 
     # Detects the sentiment of the text
@@ -19,6 +21,7 @@ def SentimentAnalysis(text):
 
     return sentimentScore
 
-text = sys.argv[1]
 
+
+text = sys.argv[1]
 print SentimentAnalysis(text)
