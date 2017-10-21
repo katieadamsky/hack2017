@@ -122,3 +122,710 @@ puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-21 13:44:28 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+LoadError (cannot load such file -- /Users/ethanwolfe/Desktop/HAAACK/hack2017/app/controllers/twitter_scrape):
+  
+app/controllers/pages_controller.rb:1:in `require_relative'
+app/controllers/pages_controller.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2017-10-21 13:45:47 -0400
+Processing by PagesController#index as HTML
+Completed 500 Internal Server Error in 3ms
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - twitter_key.xml):
+  
+app/twitter_scrape.rb:6:in `read'
+app/twitter_scrape.rb:6:in `twitter_init'
+app/controllers/pages_controller.rb:11:in `index'
+Started GET "/" for 127.0.0.1 at 2017-10-21 13:46:38 -0400
+Processing by PagesController#index as HTML
+Completed 500 Internal Server Error in 0ms
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - twitter_key.xml):
+  
+app/twitter_scrape.rb:6:in `read'
+app/twitter_scrape.rb:6:in `twitter_init'
+app/controllers/pages_controller.rb:11:in `index'
+Started GET "/" for 127.0.0.1 at 2017-10-21 13:50:54 -0400
+Processing by PagesController#index as HTML
+Completed 500 Internal Server Error in 0ms
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - twitter_key.xml):
+  
+app/twitter_scrape.rb:6:in `read'
+app/twitter_scrape.rb:6:in `twitter_init'
+app/controllers/pages_controller.rb:11:in `index'
+Started GET "/" for 127.0.0.1 at 2017-10-21 13:52:36 -0400
+Processing by PagesController#index as HTML
+Completed 500 Internal Server Error in 0ms
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - twitter_key.xml):
+  
+app/twitter_scrape.rb:6:in `read'
+app/twitter_scrape.rb:6:in `twitter_init'
+app/controllers/pages_controller.rb:11:in `index'
+Started GET "/" for 127.0.0.1 at 2017-10-21 13:53:53 -0400
+Processing by PagesController#index as HTML
+Completed 500 Internal Server Error in 0ms
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - twitter_key.xml):
+  
+app/twitter_scrape.rb:6:in `read'
+app/twitter_scrape.rb:6:in `twitter_init'
+app/controllers/pages_controller.rb:11:in `index'
+Started GET "/" for 127.0.0.1 at 2017-10-21 13:54:14 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 964ms (Views: 956.4ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 13:54:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-21 14:26:29 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 44ms (Views: 38.9ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 14:26:29 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/?textinput=" for 127.0.0.1 at 2017-10-21 14:26:34 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"textinput"=>""}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 19.9ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 14:26:34 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/?textinput=" for 127.0.0.1 at 2017-10-21 14:26:37 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"textinput"=>""}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 30ms (Views: 28.2ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 14:26:37 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/?textinput=rfewgrew" for 127.0.0.1 at 2017-10-21 14:26:41 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"textinput"=>"rfewgrew"}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 26ms (Views: 23.7ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 14:26:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/?textinput=adsfsadfs" for 127.0.0.1 at 2017-10-21 14:28:12 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"textinput"=>"adsfsadfs"}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 21.6ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 14:28:12 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/?textinput=adsfsadfs" for 127.0.0.1 at 2017-10-21 14:39:24 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Parameters: {"textinput"=>"adsfsadfs"}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 166ms (Views: 154.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 14:39:24 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 14:39:34 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.4) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.4) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.4) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.4) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.4) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.4) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.4) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.4) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 14:40:27 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Completed 500 Internal Server Error in 554ms
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x007fdb2781b230>
+Did you mean?  pretty_print
+               pretty_inspect
+               pretty_print_cycle
+               try):
+  
+app/controllers/pages_controller.rb:33:in `create'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 14:41:30 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Completed 500 Internal Server Error in 522ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (dlopen(/Users/ethanwolfe/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-darwin16/readline.bundle, 9): Library not loaded: /usr/local/opt/readline/lib/libreadline.6.dylib
+  Referenced from: /Users/ethanwolfe/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-darwin16/readline.bundle
+  Reason: image not found - /Users/ethanwolfe/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-darwin16/readline.bundle):
+  
+app/controllers/pages_controller.rb:33:in `create'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 14:41:52 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Completed 500 Internal Server Error in 552ms
+
+
+  
+LoadError (dlopen(/Users/ethanwolfe/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-darwin16/readline.bundle, 9): Library not loaded: /usr/local/opt/readline/lib/libreadline.6.dylib
+  Referenced from: /Users/ethanwolfe/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-darwin16/readline.bundle
+  Reason: image not found - /Users/ethanwolfe/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-darwin16/readline.bundle):
+  
+app/controllers/pages_controller.rb:34:in `create'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 14:42:56 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Completed 500 Internal Server Error in 616ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (dlopen(/Users/ethanwolfe/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-darwin16/readline.bundle, 9): Library not loaded: /usr/local/opt/readline/lib/libreadline.6.dylib
+  Referenced from: /Users/ethanwolfe/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-darwin16/readline.bundle
+  Reason: image not found - /Users/ethanwolfe/.rbenv/versions/2.3.1/lib/ruby/2.3.0/x86_64-darwin16/readline.bundle):
+  
+app/controllers/pages_controller.rb:33:in `create'
+Started GET "/pages" for 127.0.0.1 at 2017-10-21 14:48:58 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPage Load (2.2ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPage Load (0.1ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPage Load (0.1ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPage Load (0.1ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPage Load (0.1ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPage Load (0.1ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPage Load (0.1ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPage Load (0.1ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered pages/index.html.erb within layouts/application (176.5ms)
+Completed 500 Internal Server Error in 190ms (ActiveRecord: 3.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tweets' for #<#<Class:0x007fc3dd779338>:0x007fc3dd781600>):
+    31:   </form>
+    32: 
+    33:   <div>
+    34:     <%= tweets %>
+    35:   </div>
+    36: </body>
+    37: </html>
+  
+app/views/pages/index.html.erb:34:in `_app_views_pages_index_html_erb___2009324366020119195_70239605477720'
+Started GET "/" for 127.0.0.1 at 2017-10-21 14:48:59 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPage Load (0.1ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Page Load (0.0ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Page Load (0.0ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Page Load (0.0ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Page Load (0.0ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Page Load (0.0ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Page Load (0.0ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Page Load (0.0ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered pages/index.html.erb within layouts/application (213.3ms)
+Completed 500 Internal Server Error in 270ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tweets' for #<#<Class:0x007fc3dd779338>:0x007fc3e2818eb0>):
+    31:   </form>
+    32: 
+    33:   <div>
+    34:     <%= tweets %>
+    35:   </div>
+    36: </body>
+    37: </html>
+  
+app/views/pages/index.html.erb:34:in `_app_views_pages_index_html_erb___2009324366020119195_70239647747260'
+Started GET "/" for 127.0.0.1 at 2017-10-21 14:49:29 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPage Load (0.1ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Page Load (0.0ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Page Load (0.0ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Page Load (0.0ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Page Load (0.0ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Page Load (0.0ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Page Load (0.0ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Page Load (0.0ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered pages/index.html.erb within layouts/application (194.9ms)
+Completed 500 Internal Server Error in 201ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tweets' for #<#<Class:0x007fc3dd779338>:0x007fc3dc53d7a0>):
+    31:   </form>
+    32: 
+    33:   <div>
+    34:     <%= tweets unless tweets.nil? %>
+    35:   </div>
+    36: </body>
+    37: </html>
+  
+app/views/pages/index.html.erb:34:in `_app_views_pages_index_html_erb___2009324366020119195_70239595917680'
+Started GET "/" for 127.0.0.1 at 2017-10-21 14:49:49 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPage Load (0.2ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPage Load (0.1ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPage Load (0.1ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPage Load (0.2ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPage Load (0.1ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPage Load (0.0ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPage Load (0.1ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPage Load (0.1ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered pages/index.html.erb within layouts/application (164.6ms)
+Completed 500 Internal Server Error in 179ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tweets' for #<#<Class:0x007fca7233d580>:0x007fca72345bb8>):
+    31:   </form>
+    32: 
+    33:   <div>
+    34:     <%= tweets unless tweets.nil? %>
+    35:   </div>
+    36: </body>
+    37: </html>
+  
+app/views/pages/index.html.erb:34:in `_app_views_pages_index_html_erb___881044940254462291_70253738062460'
+Started GET "/" for 127.0.0.1 at 2017-10-21 14:53:26 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 168ms (Views: 158.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 14:53:27 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/pages" for 127.0.0.1 at 2017-10-21 14:53:36 -0400
+Processing by PagesController#create as HTML
+  Parameters: {"username"=>"realDonaldTrump"}
+Redirected to http://localhost:3000/pages?tweets%5B%5D=Tweet%3A+%E2%80%9CTrump+hails+liberation+of+Raqqa+as+critical+breakthrough+in+anti-ISIS+campaign%E2%80%9D+https%3A%2F%2Ft.co%2F2eoYXJB7h0&tweets%5B%5D=Tweet%3A+Stock+Market+hits+another+all+time+high+on+Friday.+5.3+trillion+dollars+up+since+Election.+Fake+News+doesn%27t+spent+much+time+on+this%21&tweets%5B%5D=Tweet%3A+People+get+what+is+going+on%21+https%3A%2F%2Ft.co%2FPdg7VqQv6M&tweets%5B%5D=Tweet%3A+Subject+to+the+receipt+of+further+information%2C+I+will+be+allowing%2C+as+President%2C+the+long+blocked+and+classified+JFK+FILES+to+be+opened.
+Completed 302 Found in 588ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/pages?tweets%5B%5D=Tweet%3A+%E2%80%9CTrump+hails+liberation+of+Raqqa+as+critical+breakthrough+in+anti-ISIS+campaign%E2%80%9D+https%3A%2F%2Ft.co%2F2eoYXJB7h0&tweets%5B%5D=Tweet%3A+Stock+Market+hits+another+all+time+high+on+Friday.+5.3+trillion+dollars+up+since+Election.+Fake+News+doesn%27t+spent+much+time+on+this%21&tweets%5B%5D=Tweet%3A+People+get+what+is+going+on%21+https%3A%2F%2Ft.co%2FPdg7VqQv6M&tweets%5B%5D=Tweet%3A+Subject+to+the+receipt+of+further+information%2C+I+will+be+allowing%2C+as+President%2C+the+long+blocked+and+classified+JFK+FILES+to+be+opened." for 127.0.0.1 at 2017-10-21 14:53:36 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>["Tweet: “Trump hails liberation of Raqqa as critical breakthrough in anti-ISIS campaign” https://t.co/2eoYXJB7h0", "Tweet: Stock Market hits another all time high on Friday. 5.3 trillion dollars up since Election. Fake News doesn't spent much time on this!", "Tweet: People get what is going on! https://t.co/Pdg7VqQv6M", "Tweet: Subject to the receipt of further information, I will be allowing, as President, the long blocked and classified JFK FILES to be opened."]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 14:53:37 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pages?tweets%5B%5D=Tweet%3A+%E2%80%9CTrump+hails+liberation+of+Raqqa+as+critical+breakthrough+in+anti-ISIS+campaign%E2%80%9D+https%3A%2F%2Ft.co%2F2eoYXJB7h0&tweets%5B%5D=Tweet%3A+Stock+Market+hits+another+all+time+high+on+Friday.+5.3+trillion+dollars+up+since+Election.+Fake+News+doesn%27t+spent+much+time+on+this%21&tweets%5B%5D=Tweet%3A+People+get+what+is+going+on%21+https%3A%2F%2Ft.co%2FPdg7VqQv6M&tweets%5B%5D=Tweet%3A+Subject+to+the+receipt+of+further+information%2C+I+will+be+allowing%2C+as+President%2C+the+long+blocked+and+classified+JFK+FILES+to+be+opened." for 127.0.0.1 at 2017-10-21 14:54:21 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>["Tweet: “Trump hails liberation of Raqqa as critical breakthrough in anti-ISIS campaign” https://t.co/2eoYXJB7h0", "Tweet: Stock Market hits another all time high on Friday. 5.3 trillion dollars up since Election. Fake News doesn't spent much time on this!", "Tweet: People get what is going on! https://t.co/Pdg7VqQv6M", "Tweet: Subject to the receipt of further information, I will be allowing, as President, the long blocked and classified JFK FILES to be opened."]}
+  [1m[36mPage Load (2.0ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Page Load (0.0ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+Completed 500 Internal Server Error in 138ms
+
+
+  
+  [1m[36mCACHE Page Load (0.0ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" LIMIT ?[0m  [["LIMIT", 11]]
+NameError (undefined local variable or method `tweets' for #<PagesController:0x007fd94064b240>):
+  
+app/controllers/pages_controller.rb:12:in `index'
+Started GET "/pages?tweets%5B%5D=Tweet%3A+%E2%80%9CTrump+hails+liberation+of+Raqqa+as+critical+breakthrough+in+anti-ISIS+campaign%E2%80%9D+https%3A%2F%2Ft.co%2F2eoYXJB7h0&tweets%5B%5D=Tweet%3A+Stock+Market+hits+another+all+time+high+on+Friday.+5.3+trillion+dollars+up+since+Election.+Fake+News+doesn%27t+spent+much+time+on+this%21&tweets%5B%5D=Tweet%3A+People+get+what+is+going+on%21+https%3A%2F%2Ft.co%2FPdg7VqQv6M&tweets%5B%5D=Tweet%3A+Subject+to+the+receipt+of+further+information%2C+I+will+be+allowing%2C+as+President%2C+the+long+blocked+and+classified+JFK+FILES+to+be+opened." for 127.0.0.1 at 2017-10-21 14:55:09 -0400
+Processing by PagesController#index as HTML
+  Parameters: {"tweets"=>["Tweet: “Trump hails liberation of Raqqa as critical breakthrough in anti-ISIS campaign” https://t.co/2eoYXJB7h0", "Tweet: Stock Market hits another all time high on Friday. 5.3 trillion dollars up since Election. Fake News doesn't spent much time on this!", "Tweet: People get what is going on! https://t.co/Pdg7VqQv6M", "Tweet: Subject to the receipt of further information, I will be allowing, as President, the long blocked and classified JFK FILES to be opened."]}
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 16.5ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2017-10-21 14:55:09 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'

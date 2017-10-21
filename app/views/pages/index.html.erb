@@ -7,31 +7,31 @@
   <link rel="stylesheet" href="bootstrap.css" type="text/css">
 </head>
 <body>
-    <form class="form-horizontal">
-<fieldset>
+  <form method="post" action="/pages" class="button_to btn btn-primary" id="singlebutton">
+    <fieldset>
+      <!-- Form Name -->
+      <legend>Welcome to TwitterVision!</legend>
 
-<!-- Form Name -->
-<legend>Welcome to TwitterVision!</legend>
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="textinput">Enter a Twitter Handle</label>
+        <div class="col-md-4">
+          <input id="username" name="username" type="text" placeholder="@RealDonaldTrump" class="form-control input-md">
+        </div>
+      </div>
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Enter a Twitter Handle</label>  
-  <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="@RealDonaldTrump" class="form-control input-md">
-    
+      <!-- Button -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="singlebutton">Analyze this Account</label>
+        <div class="col-md-4">
+            <input value="Enter" type="submit" />
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+  <div>
+    <%= tweets unless tweets.nil? %>
   </div>
-</div>
-
-<!-- Button -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="singlebutton">Analyze this Account</label>
-  <div class="col-md-4">
-    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Enter</button>
-  </div>
-</div>
-
-</fieldset>
-</form>
-
 </body>
 </html>

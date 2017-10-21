@@ -1,10 +1,14 @@
+require 'twitter'
+require 'nokogiri'
+
 class PagesController < ApplicationController
-  before_action :set_page, only: [:show, :edit, :update, :destroy]
+  before_action :twitter_init
 
   # GET /pages
   # GET /pages.json
   def index
     @pages = Page.all
+    render :index, locals: { tweets: params[:tweets] }
   end
 
   # GET /pages/1
@@ -24,17 +28,9 @@ class PagesController < ApplicationController
   # POST /pages
   # POST /pages.json
   def create
-    @page = Page.new(page_params)
-
-    respond_to do |format|
-      if @page.save
-        format.html { redirect_to @page, notice: 'Page was successfully created.' }
-        format.json { render :show, status: :created, location: @page }
-      else
-        format.html { render :new }
-        format.json { render json: @page.errors, status: :unprocessable_entity }
-      end
-    end
+    username = params[:username]
+    tweets = twitter_query username
+    redirect_to :action => "index", :tweets => tweets
   end
 
   # PATCH/PUT /pages/1
@@ -70,5 +66,27 @@ class PagesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def page_params
       params.fetch(:page, {})
+    end
+
+    # Load api info from xml file
+    def twitter_init
+      file = File.read("twitter_key.xml")
+      xml = Nokogiri::XML(file)
+      config = {
+        consumer_key: xml.xpath("//key").text,
+        consumer_secret: xml.xpath("//secret").text,
+      }
+
+      # Set up api client
+      @client = Twitter::REST::Client.new(config)
+    end
+
+    # Query
+    def twitter_query(user='realDonaldTrump')
+      options = {count: 5, include_rts: false}
+      tweets = @client.user_timeline(user, options)
+      tweets.map do |tweet|
+        "Tweet: #{tweet.full_text}"
+      end
     end
 end
