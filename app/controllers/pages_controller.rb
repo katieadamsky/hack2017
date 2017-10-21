@@ -1,5 +1,6 @@
 require 'twitter'
 require 'nokogiri'
+require_relative "../sentiment"
 
 class PagesController < ApplicationController
   before_action :twitter_init
@@ -30,7 +31,8 @@ class PagesController < ApplicationController
   def create
     username = params[:username]
     tweets = twitter_query username
-    redirect_to :action => "index", :tweets => tweets
+    tweet_sentiment_list = get_sentiment(tweets)
+    redirect_to :action => "index", :tweets => tweet_sentiment_list
   end
 
   # PATCH/PUT /pages/1
