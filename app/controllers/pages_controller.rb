@@ -30,7 +30,7 @@ class PagesController < ApplicationController
   # POST /pages.json
   def create
     username = params[:username]
-    tweets = twitter_query username
+    tweets = timeline_query username
     tweet_sentiment_list = get_sentiment(tweets)
     redirect_to :action => "index", :tweets => tweet_sentiment_list
   end
@@ -83,12 +83,17 @@ class PagesController < ApplicationController
       @client = Twitter::REST::Client.new(config)
     end
 
-    # Query
-    def twitter_query(user='realDonaldTrump')
-      options = {count: 5, include_rts: false}
+    def timeline_query(user='realDonaldTrump', count=20)
+      options = {count: count, include_rts: false}
       tweets = @client.user_timeline(user, options)
       tweets.map do |tweet|
         "Tweet: #{tweet.full_text}"
       end
     end
+
+    # def reply_query(user='realDonaldTrump')
+    #   count = 1
+    #   tweets = timeline_query user, count
+    #
+    # end
 end
