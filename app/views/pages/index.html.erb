@@ -5,32 +5,31 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>SMITTY RETURNS</title>
   <script type="text/javascript" src="../../assets/javascripts/chart.js"></script>
-
 </head>
 <body>
-  <form method="post" action="/pages" class="button_to btn btn-primary" id="singlebutton">
+  <form method="post" action="/pages" style="width: 100%; margin: auto;">
     <fieldset>
       <!-- Form Name -->
       <legend>Welcome to TwitterVision!</legend>
 
       <!-- Text input-->
       <div class="form-group">
-        <label class="col-md-4 control-label" for="textinput">Enter a Twitter Handle</label>
-        <div class="col-md-4">
-          <input id="username" name="username" type="text" placeholder="@RealDonaldTrump" class="form-control input-md">
+        <label class="control-label" for="textinput">Enter a Twitter Handle</label>
+        <div>
+          <input id="username" name="username" type="text" placeholder="realDonaldTrump" class="form-control input-md" style="width: 15em;">
         </div>
       </div>
 
       <!-- Button -->
       <div class="form-group">
-        <label class="col-md-4 control-label" for="singlebutton">Analyze this Account</label>
-        <div class="col-md-4">
+        <label class="control-label" for="singlebutton">Analyze this Account</label>
+        <div>
             <input value="Enter" type="submit" />
         </div>
       </div>
     </fieldset>
   </form>
-  <canvas id="doughnut-chart" width="800" height="450"></canvas>
+  <canvas id="doughnut-chart" height="100"></canvas>
   <script>
     var tweets = []
     <% if !(tweets.nil?) %>
@@ -59,7 +58,7 @@
       datasets: [
         {
           label: "Population (millions)",
-          backgroundColor: ["#ffee00", "#57c100","#c1c1c1","#ef2700","#6d1200"],
+          backgroundColor: ["#58aceb", "#3e77a3","#2c5575","#1b3549","#000000"],
           data: [vPos,pos,neutral,neg,vNeg]
         }
       ]
@@ -67,7 +66,7 @@
     options: {
       title: {
         display: true,
-        text: 'DATA'
+        text: 'Sentiment Analysis'
       }
     }
     });
