@@ -10,7 +10,7 @@
   <form method="post" action="/pages" style="width: 100%; margin: auto;">
     <fieldset>
       <!-- Form Name -->
-      <legend>Welcome to TwitterVision!</legend>
+      <legend><h3>Welcome to TwitterVision!</h3></legend>
 
       <!-- Text input-->
       <div class="form-group">
@@ -29,21 +29,29 @@
       </div>
     </fieldset>
   </form>
+  <!--<p>Analyzing <%= @count %> tweets</p>-->
   <canvas id="doughnut-chart" height="100"></canvas>
   <script>
-    var tweets = []
+    var tweets = [];
+
     <% if !(tweets.nil?) %>
-      tweets = <%=raw tweets%>
+      tweets = <%=raw tweets%>;
     <% end %>
 
-    var vPos = 0
-    var pos = 0
-    var neutral = 0
-    var neg = 0
-    var vNeg = 0
+    if (tweets.length == 0) {
+      window.alert("Invalid or private user");
+    }
+
+    var total = 0;
+    var vPos = 0;
+    var pos = 0;
+    var neutral = 0;
+    var neg = 0;
+    var vNeg = 0;
 
     for (var i=0; i<tweets.length; i++) {
       if (tweets[i] == 0) continue;
+      total++;
       if (tweets[i] >= 0.8) vPos++;
       else if (tweets[i] >= 0.3) pos++;
       else if (tweets[i] > -0.3) neutral++;
@@ -59,14 +67,15 @@
         {
           label: "Population (millions)",
           backgroundColor: ["#58aceb", "#3e77a3","#2c5575","#1b3549","#000000"],
-          data: [vPos,pos,neutral,neg,vNeg]
+          data: [(vPos/total*100).toFixed(2),(pos/total*100).toFixed(2),(neutral/total*100).toFixed(2),(neg/total*100).toFixed(2),(vNeg/total*100).toFixed(2)]
         }
       ]
     },
     options: {
       title: {
         display: true,
-        text: 'Sentiment Analysis'
+        text: 'Sentiment Analysis',
+        fontSize: 24
       }
     }
     });

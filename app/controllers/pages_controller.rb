@@ -9,6 +9,7 @@ class PagesController < ApplicationController
   # GET /pages.json
   def index
     @pages = Page.all
+    @count = 20
     render :index, locals: { tweets: params[:tweets] }
   end
 
@@ -83,17 +84,15 @@ class PagesController < ApplicationController
       @client = Twitter::REST::Client.new(config)
     end
 
-    def timeline_query(user='realDonaldTrump', count=20)
-      options = {count: count, include_rts: false}
-      tweets = @client.user_timeline(user, options)
-      tweets.map do |tweet|
-        "Tweet: #{tweet.full_text}"
+    def timeline_query(user='realDonaldTrump', count=@count)
+      begin
+        options = {count: count, include_rts: false}
+        tweets = @client.user_timeline(user, options)
+        tweets.map do |tweet|
+          "Tweet: #{tweet.full_text}"
+        end
+      rescue
+        return []
       end
     end
-
-    # def reply_query(user='realDonaldTrump')
-    #   count = 1
-    #   tweets = timeline_query user, count
-    #
-    # end
 end
