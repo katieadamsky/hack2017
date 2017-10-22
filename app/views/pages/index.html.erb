@@ -4,9 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>SMITTY RETURNS</title>
-  <link rel="stylesheet" href="bootstrap.css" type="text/css">
   <script type="text/javascript" src="../../assets/javascripts/chart.js"></script>
-  
+
 </head>
 <body>
   <form method="post" action="/pages" class="button_to btn btn-primary" id="singlebutton">
@@ -33,24 +32,42 @@
   </form>
   <canvas id="doughnut-chart" width="800" height="450"></canvas>
   <script>
-    var tweets = <%=raw @tweets%>
-    console.log(tweets)
+    var tweets = []
+    <% if !(tweets.nil?) %>
+      tweets = <%=raw tweets%>
+    <% end %>
+
+    var vPos = 0
+    var pos = 0
+    var neutral = 0
+    var neg = 0
+    var vNeg = 0
+
+    for (var i=0; i<tweets.length; i++) {
+      if (tweets[i] == 0) continue;
+      if (tweets[i] >= 0.8) vPos++;
+      else if (tweets[i] >= 0.3) pos++;
+      else if (tweets[i] > -0.3) neutral++;
+      else if (tweets[i] > -0.8) neg++;
+      else vNeg++;
+    }
+
     new Chart(document.getElementById("doughnut-chart"), {
     type: 'doughnut',
     data: {
-      labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+      labels: ["Very positive", "Positive", "Neutral", "Negative", "Very negative"],
       datasets: [
         {
           label: "Population (millions)",
-          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-          data: [2478,5267,734,784,433]
+          backgroundColor: ["#ffee00", "#57c100","#c1c1c1","#ef2700","#6d1200"],
+          data: [vPos,pos,neutral,neg,vNeg]
         }
       ]
     },
     options: {
       title: {
         display: true,
-        text: 'Predicted world population (millions) in 2050'
+        text: 'DATA'
       }
     }
     });
